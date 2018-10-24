@@ -68,4 +68,10 @@ We added the following Chilkat code to AppDelegate.swift.  It does nothing and w
         
     }
 ```
+## 5) Add the Chilkat Static Library (.a)
 
+Go to your project's Build Phases (the tab located just to the right of Build Settings) and add the libChilkatCocoa.a (for MacOSX) or libChilkatIos.a (for iOS).   
+
+Do this by expanding the <b>Link Binary with Libraries</b> section, then click on "+" to add items, then click on the <b>Add Other</b> button.   Navigate to the directory where the Chilkat static lib (.a) located and add it.
+
+![Build Phases](https://github.com/chilkatsoft/TestChilkatSwift/blob/master/images/BuildPhases.png?raw=true "Add Static Link Lib in Build Phases")
