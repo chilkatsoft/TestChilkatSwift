@@ -24,4 +24,48 @@ Create a .h header file named YourProject-Bridging-Header.h, and insert the foll
 // The import path to each Cko*.h header depends on where you downloaded/extracted the Chilkat lib.
 // Import the Chilkat "Cko" classes used by your application...
 ```
-## 3) 
+## 3) Set the Swift Bridging Header in your Project's Build Settings.
+
+For example:<br>
+![Swift Bridging Header](https://github.com/chilkatsoft/TestChilkatSwift/blob/master/images/BridgingHeader.png?raw=true "Swift Bridging Header Build Settings")
+
+## 4) Add Chilkat Code
+
+We added the following Chilkat code to AppDelegate.swift.  It does nothing and was only inserted to test compiling and linking.  The purpose of this project is simply to get a clean compile and build, not to run it..
+
+```
+    // Add code that uses Chilkat so we can test compiling/linking...
+    //
+    func chilkatCode() {
+        let json = CkoJsonObject()!
+        
+        var success: Bool
+        
+        // The only reason for failure in the following lines of code would be an out-of-memory condition,
+        // which isn't going to happen...
+        
+        //  An index value of -1 is used to append at the end.
+        success = json.addString(at: -1, name: "Title", value: "Pan's Labyrinth")
+        if (success) {
+            success = json.addString(at: -1, name: "Director", value: "Guillermo del Toro")
+        }
+        if (success) {
+            success = json.addString(at: -1, name: "Original_Title", value: "El laberinto del fauno")
+        }
+        if (success) {
+            success = json.addInt(at: -1, name: "Year_Released", value: 2006)
+        }
+        
+        json.emitCompact = false
+        //print("\(json.emit()!)")
+        
+    }
+
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
+        // Insert code here to initialize your application
+        // test creating and using a Chilkat object.
+        chilkatCode();
+        
+    }
+```
+
