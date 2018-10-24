@@ -81,3 +81,11 @@ Do this by expanding the <b>Link Binary with Libraries</b> section, then click o
 In <b>Build Settings</b>,  Add -lresolv -lpthread -lstdc++ to Other Linker Flags.
 
 ![Other Linker Flags](https://github.com/chilkatsoft/TestChilkatSwift/blob/master/images/OtherLinkerFlags.png?raw=true "Other Linker Flags")
+
+## 7 Final Notes
+
+That should be everything.  (If not, please let us know by sending email to support@chilkatsoft.com)
+
+<b>Important</b> Chilkat provides documentation for both Swift 2 and Swift 3 / Swift 4.   When Objective-C is used in Swift version 2, the imported methods and properties (via the Bridging Header) have names that are unmodified.  
+
+However..  when using Swift version 3 or Swift version 4, the method and property names imported from Objective-C are renamed.  The 1st letter of each method and property is changed to lowercase, and some method names may have been renamed.  Chilkat provides separate reference documentation and examples for Swift 2 and Swift 3/4.  Make sure you are aware of which documentaiton / examples you are viewing.
