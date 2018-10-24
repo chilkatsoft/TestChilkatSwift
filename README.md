@@ -75,3 +75,9 @@ Go to your project's Build Phases (the tab located just to the right of Build Se
 Do this by expanding the <b>Link Binary with Libraries</b> section, then click on "+" to add items, then click on the <b>Add Other</b> button.   Navigate to the directory where the Chilkat static lib (.a) located and add it.
 
 ![Build Phases](https://github.com/chilkatsoft/TestChilkatSwift/blob/master/images/BuildPhases.png?raw=true "Add Static Link Lib in Build Phases")
+
+## 6) Add -lresolv -lpthread -lstdc++ to Other Linker Flags
+
+In <b>Build Settings</b>,  Add -lresolv -lpthread -lstdc++ to Other Linker Flags.
+
+![Other Linker Flags](https://github.com/chilkatsoft/TestChilkatSwift/blob/master/images/OtherLinkerFlags.png?raw=true "Other Linker Flags")
